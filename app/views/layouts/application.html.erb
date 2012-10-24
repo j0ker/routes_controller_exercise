@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ControllerExercise</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+    <title>ControllerExercise</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
 </head>
 <body>
+    <p>
+        <%= link_to "Schneems Blog", "http://schneems.com" %>
+        <%= link_to "Product List", products_path %>
+        <%= link_to "User List", users_path %>
+    </p>
 
-<%= yield %>
-
+    <%= yield %>
 </body>
 </html>
